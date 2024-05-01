@@ -1,1 +1,1 @@
-# This is a project about classify art styles.
+# This is a project about classifying art styles.
