@@ -73,14 +73,6 @@ class ArtDataset(Dataset):
 
 #transform defination
 class RandomNoise(object):
-    def __init__(self, mean=0.0, std=0.1):
-        self.mean = mean
-        self.std = std
-
-    def __call__(self, tensor):
-        noise = torch.randn(tensor.size()) * self.std + self.mean
-        return tensor + noise
-class RandomNoise(object):
     def __init__(self, mean=0.0, std=0.1, **kwargs):
         self.mean = mean
         self.std = std
@@ -117,6 +109,7 @@ for i in range(1,cols*rows+1):
     plt.axis('off')
     plt.imshow(img.permute(1,2,0)*0.5+0.5)
 plt.show()
+
 
 train_dataloader=DataLoader(train_dataset,batch_size=64,shuffle=True)
 val_dataloader=DataLoader(val_dataset,batch_size=64,shuffle=True)
