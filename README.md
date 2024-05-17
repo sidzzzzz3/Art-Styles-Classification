@@ -5,3 +5,5 @@ Wednesday, May 1, 2024 (EDT)
 all images are belong to one of 13 styles.
 The source is from:
   https://www.kaggle.com/datasets/sivarazadi/wikiart-art-movementsstyles/data
+
+Hi Im Sid
